@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Toss</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <script>
+        function myfunc() {
+            var x = Math.floor(Math.random()*100 + 1);
+            if (x&1) {
+                document.getElementById('toss').src = "Pics/circle-cropped.png";
+            }
+            else {
+                document.getElementById('toss').src = "Pics/circle-cropped1.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center; color: blueviolet;">Shan Toss</h1>
+    <div style="display: block; margin-top: 5rem; text-align: center;">
+        <img src="Pics/coin_toss1.jpg" alt="" width="200px" id="toss">
+        <br>
+        <button class="btn" style="text-align: center; margin-top: 5rem;" onclick="myfunc()">Toss The coin</button>
+    </div>
+</body>
+</html>
